@@ -8,6 +8,7 @@
 
         FB.login(function() {
             FB.api('/me/events?since=0&limit=5000', {}, function(response) {
+                console.log(response);
                 if (response.data) {
                     layOutTimeline(response.data, 0.3);
                 }
