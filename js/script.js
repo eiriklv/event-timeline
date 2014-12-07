@@ -52,7 +52,7 @@ var layOutTimeline = (function() {
 
       return [
         '<div class="year" style="' + style + '">',
-        '<span>' + year + ' (' + (year - timeSpan[0]) + ')' + '</span>',
+        '<span>' + year + '</span>',
         '</div>'
       ].join('');
     }).join('');
