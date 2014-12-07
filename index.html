@@ -23,33 +23,13 @@
     <!-- use type="text/javascript" to support IE8 -->
     <script type="text/javascript" src="js/es5-shim.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment-with-locales.min.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
-    <script type="text/javascript">
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId: '1512036642388764',
-            xfbml: true,
-            version: 'v2.2'
-        });
-
-        FB.login(function() {
-            FB.api('/me/events?since=0&limit=5000', {}, function(response) {
-                console.log(response);
-            });
-        }, {
-            scope: 'user_events'
-        });
-    }
-    </script>
+    <script type="text/javascript" src="js/facebook.js"></script>
 
     <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
+        if (d.getElementById(id)) {return;}
         js = d.createElement(s);
         js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";

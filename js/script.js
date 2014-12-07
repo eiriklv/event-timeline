@@ -104,7 +104,18 @@ var layOutTimeline = (function() {
     });
   }
 
-  return function(events, scale) {
+  function formatEventDataFromFacebook(events) {
+    return events.map(function(event) {
+      return {
+        name: event.name + ' (' + (event.location ? event.location : 'Unknown') + ')',
+        start: event.start_time,
+        end: event.end_time
+      };
+    });
+  }
+
+  return function(facebookEvents, scale) {
+    var events = formatEventDataFromFacebook(facebookEvents);
     var scale = scale || 0.3;
     var data = createDataArray(events);
     var sortedData = sortByProp(data, 'start');
