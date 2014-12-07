@@ -8,9 +8,10 @@
 
         FB.login(function() {
             FB.api('/me/events?since=0&limit=5000', {}, function(response) {
-                console.log(response);
-                if (response.data) {
+                if (response.data.length > 0) {
                     layOutTimeline(response.data, 0.3);
+                } else {
+                    alert('Sorry, you either have no events on facebook, or there\'s something wrong with the permissions');
                 }
             });
         }, {
