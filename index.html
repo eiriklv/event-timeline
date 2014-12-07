@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Timeline</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="timeline" class="timeline">
+            <div id="timespan" class="timespan">
+                <!-- timespan will be appended here by js -->
+            </div>
+            <div id="events" class="events">
+                <!-- events will be appended here by js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- use type="text/javascript" to support IE8 -->
+    <script type="text/javascript" src="js/es5-shim.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript">
+    window.fbAsyncInit = function() {
+        alert('facebook initialized');
+    }
+    </script>
+
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '1512036642388764',
+            xfbml: true,
+            version: 'v2.2'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body>
+
+</html>
