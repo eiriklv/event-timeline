@@ -64,3 +64,24 @@ body {
 .event {
   white-space: nowrap;
 }
+
+.banner {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  margin: 5px;
+  padding: 15px;
+  background-color: rgba(17,54,80,0.5);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.banner a {
+  text-decoration: none;
+  color: #7E81B1;
+}
+
+.banner-title {
+  margin: 0 0 10px 0;
+}
