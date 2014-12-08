@@ -2,6 +2,7 @@ Event Timeline (Facebook Graph API App)
 =======================================
 
 #### Introduction:
+Just one of those Sunday projects :-)
 Create a timeline of all the facebook events you have ever attended!
 
 #### Live preview:
