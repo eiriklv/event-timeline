@@ -81,7 +81,7 @@ var layOutTimeline = (function() {
       return [
         '<div class="event" style="' + elementStyle + '">',
         '    <span class="timebar" style="' + spanStyle + '"></span>',
-        '    <p>'
+        '    <p>',
         '        <span class="event-name">' + event.name + '</span>',
         '        <span class="event-location"> (' + event.location + ')</span>',
         '    </p>',
