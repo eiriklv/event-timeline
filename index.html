@@ -3,9 +3,14 @@
 
 <head>
     <title>Event Timeline</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta property="og:image" content="http://www.vullum.io/event-timeline/img/preview.png" />
+    <meta property="og:title" content="Facebook Event Timeline" />
+    <meta property="og:site_name" content="Facebook Event Timeline" />
+    <meta property="og:url" content="http://www.vullum.io/event-timeline" />
+    <meta property="og:description" content="Show all the facebook events you have ever attended on a nice timeline." />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -33,7 +38,9 @@
     <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
+        if (d.getElementById(id)) {
+            return;
+        }
         js = d.createElement(s);
         js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
