@@ -81,7 +81,10 @@ var layOutTimeline = (function() {
       return [
         '<div class="event" style="' + elementStyle + '">',
         '    <span class="timebar" style="' + spanStyle + '"></span>',
-        '    <p>' + event.name + '</p>',
+        '    <p>'
+        '        <span class="event-name">' + event.name + '</span>',
+        '        <span class="event-location"> (' + event.location + ')</span>',
+        '    </p>',
         '</div>'
       ].join('')
     }).join('');
@@ -107,7 +110,8 @@ var layOutTimeline = (function() {
   function formatEventDataFromFacebook(events) {
     return events.map(function(event) {
       return {
-        name: event.name + ' (' + (event.location ? event.location : 'Unknown') + ')',
+        name: event.name,
+        location: (event.location ? event.location : 'Unknown'),
         start: event.start_time,
         end: event.end_time
       };
