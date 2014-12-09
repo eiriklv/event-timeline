@@ -6,7 +6,7 @@ html {
 body {
   font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
   font-size: 12px;
-  color: #545693;
+  color: #ABACCE;
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
   background-color: #090A3B;
@@ -17,13 +17,13 @@ body {
 }
 
 .timeline {
-  padding-bottom: 5em;
   min-height: 100%;
 }
 
 .timespan {
   position: absolute;
   min-height: 100%;
+  font-size: 18px;
 }
 
 .timebar {
@@ -57,12 +57,25 @@ body {
 
 .events {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .event {
   white-space: nowrap;
+}
+
+.event p {
+  font-size: 14px;
+}
+
+.event-name {
+  color: #fff;
+}
+
+.event-location {
+  color: rgba(84,86,147,1);
 }
 
 .banner {

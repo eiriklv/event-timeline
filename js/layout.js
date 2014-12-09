@@ -101,6 +101,7 @@ var layOutTimeline = (function() {
 
       return {
         name: event.name,
+        location: event.location,
         start: moment(event.start),
         end: moment(event.end || event.start)
       }
